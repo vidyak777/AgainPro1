@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.practice.qa.testcases.ValidateTitle">
+        <methods>
+          <include name="verifyTitle"/>
+          <include name="initialization"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.practice.qa.testcases.ValidateTitle -->
+      <class name="com.practice.qa.testcases.VerifyNavBar">
+        <methods>
+          <include name="verifyNavBar"/>
+          <include name="initialization"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.practice.qa.testcases.VerifyNavBar -->
+      <class name="com.practice.qa.testcases.VerifyHomePage">
+        <methods>
+          <include name="initialization"/>
+          <include name="basePageNavigation" invocation-numbers="1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.practice.qa.testcases.VerifyHomePage -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
